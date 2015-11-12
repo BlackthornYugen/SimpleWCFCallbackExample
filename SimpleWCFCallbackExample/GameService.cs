@@ -63,7 +63,6 @@ namespace SimpleWCFCallbackExample
             }
 
             guesses = new Dictionary<string, int>();
-            callbacks = new Dictionary<string, IBroadcastorCallback>();
         }
 
         public void RegisterClient(string clientName)
