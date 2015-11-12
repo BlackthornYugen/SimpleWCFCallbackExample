@@ -14,7 +14,7 @@ namespace SimpleWCFCallbackExample
         /// Anyone can guess a number, even if they don't have the ability to register for a callback.
         /// </summary>
         /// <param name="clientName">The name of the player, used to track their guess(es).</param>
-        /// <param name="value">The player's guess.</param>
+        /// <param name="value">The player's guess should be a number from 0 - 9</param>
         /// <returns>A string letting the player know if their guess has been registered.</returns>
         public string GuessNumber(string clientName, int value)
         {
@@ -37,7 +37,7 @@ namespace SimpleWCFCallbackExample
         /// </summary>
         public void GuessTheNumber()
         {
-            int theNumber = new Random().Next(1, 10);
+            int theNumber = new Random().Next(0, 9);
 
             foreach (var guess in guesses) {
                 if (guess.Value == theNumber)
@@ -54,7 +54,7 @@ namespace SimpleWCFCallbackExample
                 {
                     try
                     {
-                        callbacks[guess.Key].BroadcastToClient("You didn't win, don't feel bad. It happends.");
+                        callbacks[guess.Key].BroadcastToClient("You didn't win, don't feel bad. It happens.");
                     }
                     catch (Exception)
                     {
