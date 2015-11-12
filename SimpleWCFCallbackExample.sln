@@ -5,6 +5,11 @@ VisualStudioVersion = 14.0.23107.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleWCFCallbackExample", "SimpleWCFCallbackExample\SimpleWCFCallbackExample.csproj", "{711C07FC-8EB0-4A91-9424-F21F797025AE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WCFCallbackConsole", "WCFCallbackConsole\WCFCallbackConsole.csproj", "{02FD7BC1-104F-46B3-B845-A8A9C7CFEB87}"
+	ProjectSection(ProjectDependencies) = postProject
+		{711C07FC-8EB0-4A91-9424-F21F797025AE} = {711C07FC-8EB0-4A91-9424-F21F797025AE}
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +20,10 @@ Global
 		{711C07FC-8EB0-4A91-9424-F21F797025AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{711C07FC-8EB0-4A91-9424-F21F797025AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{711C07FC-8EB0-4A91-9424-F21F797025AE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{02FD7BC1-104F-46B3-B845-A8A9C7CFEB87}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{02FD7BC1-104F-46B3-B845-A8A9C7CFEB87}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{02FD7BC1-104F-46B3-B845-A8A9C7CFEB87}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{02FD7BC1-104F-46B3-B845-A8A9C7CFEB87}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
