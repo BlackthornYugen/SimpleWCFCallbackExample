@@ -6,7 +6,10 @@ namespace SimpleWCFCallbackExample
     public interface IGameService
     {
         [OperationContract]
-        string GuessNumber(int value);
+        string GuessNumber(string clientName, int value);
+
+        [OperationContract]
+        void GuessTheNumber();
     }
 
     [ServiceContract(CallbackContract = typeof(IBroadcastorCallback))]
